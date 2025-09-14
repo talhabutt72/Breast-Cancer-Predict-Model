@@ -11,7 +11,8 @@ with open("model.pkl", "rb") as f:
 st.title("ML Model Demo")
 
 
-df = pd.read_csv(r"C:\Users\sscomputers\Desktop\Daily 1 Project\Breast Cancer\breast cancer.csv")   # replace with your actual file
+df = pd.read_csv("breast_cancer.csv")
+# replace with your actual file
 feature_names = df.drop(["diagnosis", "id", "Unnamed: 32"], axis=1).columns.tolist()
 
 inputs = []
